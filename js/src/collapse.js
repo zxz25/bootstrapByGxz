@@ -83,7 +83,7 @@ class Collapse {
       const filterElement = SelectorEngine.find(selector)
         .filter(foundElem => foundElem === element)
 
-      if (selector !== null && filterElement.length) {
+      if (selector !== null && filterElement.length > 0) {
         this._selector = selector
         this._triggerArray.push(elem)
       }
@@ -180,7 +180,7 @@ class Collapse {
 
     this._element.style[dimension] = 0
 
-    if (this._triggerArray.length) {
+    if (this._triggerArray.length > 0) {
       this._triggerArray.forEach(element => {
         element.classList.remove(CLASS_NAME_COLLAPSED)
         element.setAttribute('aria-expanded', true)
@@ -317,7 +317,7 @@ class Collapse {
   }
 
   _addAriaAndCollapsedClass(element, triggerArray) {
-    if (!element || !triggerArray.length) {
+    if (!element || triggerArray.length === 0) {
       return
     }
 
