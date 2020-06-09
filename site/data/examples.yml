@@ -24,6 +24,12 @@
     - name: Sticky footer navbar
       description: "Attach a footer to the bottom of the viewport with a fixed top navbar."
 
+- category: Right-to-left Custom Components
+  description: "Brand new components and templates to help folks quickly get started with Bootstrap and demonstrate best practices for adding onto the framework."
+  examples:
+    - name: Album RTL
+      description: "Simple one-page template for photo galleries, portfolios, and more."
+
 - category: Framework
   description: "Examples that focus on implementing uses of built-in components provided by Bootstrap."
   examples:
