@@ -107,18 +107,18 @@ The button plugin allows you to create simple on/off toggle buttons.
 
 ### Toggle states
 
-Add `data-toggle="button"` to toggle a button's `active` state. If you're pre-toggling a button, you must manually add the `.active` class **and** `aria-pressed="true"` to the `<button>`.
+Add `data-bs-toggle="button"` to toggle a button's `active` state. If you're pre-toggling a button, you must manually add the `.active` class **and** `aria-pressed="true"` to the `<button>`.
 
 {{< example >}}
-<button type="button" class="btn btn-primary" data-toggle="button" autocomplete="off">Toggle button</button>
-<button type="button" class="btn btn-primary active" data-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
-<button type="button" class="btn btn-primary" disabled data-toggle="button" autocomplete="off">Disabled toggle button</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+<button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+<button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">Disabled toggle button</button>
 {{< /example >}}
 
 {{< example >}}
-<a href="#" class="btn btn-primary" role="button" data-toggle="button">Toggle link</a>
-<a href="#" class="btn btn-primary active" role="button" data-toggle="button" aria-pressed="true">Active toggle link</a>
-<a href="#" class="btn btn-primary disabled" role="button" data-toggle="button">Disabled toggle link</a>
+<a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
+<a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+<a href="#" class="btn btn-primary disabled" role="button" data-bs-toggle="button">Disabled toggle link</a>
 {{< /example >}}
 
 ### Methods
