@@ -17,6 +17,7 @@
   a {
     padding: .1875rem .5rem;
     margin-top: .125rem;
+    margin-left: 1.25rem;
     color: rgba($black, .65);
     text-decoration: if($link-decoration == none, null, none);
 
@@ -26,28 +27,28 @@
       text-decoration: if($link-hover-decoration == underline, none, null);
       background-color: rgba($bd-purple-bright, .1);
     }
+  }
 
-    // Indent if there's no submenu
-    &:only-child {
-      margin-left: 1.25rem;
-    }
+  button {
+
+    font-weight: 600;
+    color: rgba($black, .65);
 
     // Add chevron if there's a submenu
-    &:not(:only-child) {
+    &::before {
+      width: 1.25em;
+      line-height: 0; // Align in the middle
+      content: escape-svg($sidebar-collapse-icon);
+      @include transition(transform .35s ease);
+      transform-origin: .5em 50%;
+    }
+
+    // stylelint-disable-next-line selector-no-qualifying-type
+    &[aria-expanded="true"] {
+      color: rgba($black, .85);
+
       &::before {
-        width: 1.25em;
-        line-height: 0; // Align in the middle
-        content: escape-svg($sidebar-collapse-icon);
-        @include transition(transform .35s ease);
-        transform-origin: .5em 50%;
-      }
-
-      &:not(.collapsed) {
-        color: rgba($black, .85);
-
-        &::before {
-          transform: rotate(90deg);
-        }
+        transform: rotate(90deg);
       }
     }
 
