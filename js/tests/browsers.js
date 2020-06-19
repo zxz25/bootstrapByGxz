@@ -28,7 +28,7 @@ const browsers = {
     os: 'Windows',
     os_version: '10',
     browser: 'Edge',
-    browser_version: '16'
+    browser_version: '17.0'
   },
   edgeWin10Latest: {
     base: 'BrowserStack',
