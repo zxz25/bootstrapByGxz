@@ -10,3 +10,5 @@ Edge >= 17
 iOS >= 11
 Safari >= 11
 not Explorer <= 11
+# BrowserStack Edge tests fail if Android is removed thus ES6+ is used
+Android >= 6
