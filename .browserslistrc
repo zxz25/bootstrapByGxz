@@ -7,6 +7,6 @@ Chrome >= 60
 Firefox >= 60
 Firefox ESR
 Edge >= 17
-iOS >= 10
-Safari >= 10
+iOS >= 11
+Safari >= 11
 not Explorer <= 11
