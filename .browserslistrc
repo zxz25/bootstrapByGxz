@@ -10,4 +10,3 @@ iOS >= 10
 Safari >= 10
 Android >= 6
 not Explorer <= 11
-not ExplorerMobile <= 11
