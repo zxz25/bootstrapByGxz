@@ -1,8 +1,8 @@
 {{- "<!-- Bootstrap core CSS -->" | safeHTML }}
 {{ if eq hugo.Environment "production" -}}
-<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/bootstrap.min.css" rel="stylesheet" {{ printf "integrity=%q" .Site.Params.cdn.css_hash | safeHTMLAttr }} crossorigin="anonymous">
+<link rel="stylesheet" href="/docs/{{ .Site.Params.docs_version }}/dist/css/bootstrap.min.css" {{ printf "integrity=%q" .Site.Params.cdn.css_hash | safeHTMLAttr }} crossorigin="anonymous">
 {{- else -}}
-<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="/docs/{{ .Site.Params.docs_version }}/dist/css/bootstrap.css">
 {{- end }}
 
 {{- if (ne .Page.Layout "examples") }}
