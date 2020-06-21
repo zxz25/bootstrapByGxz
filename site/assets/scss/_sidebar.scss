@@ -30,9 +30,17 @@
   }
 
   .btn {
-
     font-weight: 600;
     color: rgba($black, .65);
+    // Custom styles (as we don't have a completely neutral button style)
+    background: none;
+    border: none;
+
+    &:hover,
+    &:focus {
+      color: rgba($black, .85);
+      background-color: rgba($bd-purple-bright, .1);
+    }
 
     // Add chevron if there's a submenu
     &::before {
